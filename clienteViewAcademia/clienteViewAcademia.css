@@ -1,0 +1,94 @@
+:host {
+    display: block;
+    background: linear-gradient(135deg, #927dd6 0%, #4260a1 100%);
+    padding: 2rem;
+    font-family: 'Salesforce Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* ===== CARD PRINCIPAL ===== */
+.main-card {
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    color: #1b1b1b;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ===== TÍTULOS ===== */
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2f2f2f;
+    margin-bottom: 1rem;
+}
+
+/* ===== INFO DO CLIENTE ===== */
+.client-info p {
+    margin: 0.2rem 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* ===== GRID DE PLANOS ===== */
+.planos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* ===== CARD DO PLANO ===== */
+.plano-card {
+    background: #f8f9fc;
+    border: 1px solid #e0e3ff;
+    border-radius: 0.75rem;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+}
+.plano-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== TITULO DO PLANO ===== */
+.plano-title {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 600;
+    color: #2f3e9e;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== STATUS BADGE ===== */
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #fff;
+}
+.status-ativo {
+    background-color: #28c76f;
+}
+.status-cancelado {
+    background-color: #ea5455;
+}
+.status-pendente {
+    background-color: #ff9f43;
+}
+
+/* ===== PAGAMENTOS ===== */
+.pagamentos {
+    margin-top: 0.7rem;
+}
+.pagamentos p {
+    color: #6b7280;
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+}

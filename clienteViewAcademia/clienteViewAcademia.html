@@ -1,0 +1,49 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 02-02-2026
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <template if:true={cliente}>
+        <div class="main-card">
+            <h2 class="section-title">Informações do Cliente</h2>
+            <div class="client-info">
+                <p><strong>Nome:</strong> {cliente.nome}</p>
+                <p><strong>CPF:</strong> {cliente.cpf}</p>
+                <p><strong>Telefone:</strong> {cliente.telefone}</p>
+            </div>
+
+            <template if:true={cliente.planos}>
+                <div class="planos-grid">
+                    <template for:each={cliente.planos} for:item="plano">
+                        <div key={plano.idPlano} class="plano-card">
+                            <div class="plano-title">
+                                <lightning-icon icon-name="standard:service_contract" size="small"></lightning-icon>
+                                <span>{plano.nomePlano}</span>
+                            </div>
+                            <p>
+                                <strong>Status:</strong>
+                                <span class="status-badge 
+                                    {plano.statusClass}">
+                                    {plano.status}
+                                </span>
+                            </p>
+                            <p><strong>Preço:</strong> R$ {plano.preco}</p>
+
+                            <div class="pagamentos">
+                                <p><strong>Pagamentos:</strong></p>
+                                <template for:each={plano.pagamentos} for:item="pagamento">
+                                    <p key={pagamento.idPagamento}>
+                                        Pagamento {pagamento.idPagamento}: {pagamento.status} - R$ {pagamento.valor}
+                                    </p>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </template>
+        </div>
+    </template>
+</template>
