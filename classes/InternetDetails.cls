@@ -9,7 +9,7 @@
 public with sharing class InternetDetails {
 
     @AuraEnabled(cacheable=true)
-    public static List<ChipHistoryWrapper> buscarCompras(String numeroCliente) {
+    public static List<InternetDetailsWrapper> buscarCompras(String numeroCliente) {
 
         // Token da API
         String token = 'abc123';
@@ -29,14 +29,14 @@ public with sharing class InternetDetails {
             HttpResponse response = http.send(request);
 
             if (response.getStatusCode() == 200 && String.isNotBlank(response.getBody())) {
-                return (List<ChipHistoryWrapper>) JSON.deserialize(
+                return (List<InternetDetailsWrapper>) JSON.deserialize(
                     response.getBody(),
-                    List<ChipHistoryWrapper>.class
+                    List<InternetDetailsWrapper>.class
                 );
             }
 
             // Sempre retorne lista vazia para Aura/LWC
-            return new List<ChipHistoryWrapper>();
+            return new List<InternetDetailsWrapper>();
 
         } catch (Exception e) {
             System.debug('Erro ao consultar API: ' + e.getMessage());
