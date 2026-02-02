@@ -9,6 +9,10 @@ Componente **Lightning Web Component (LWC)** que exibe informações detalhadas 
 O **ClienteView** é um componente LWC que consome o método Apex `AcademiaService.getClienteById`.  
 Ele exibe os dados do cliente em um layout visual agradável e seguro, aplicando **máscaras automáticas** em campos sensíveis (CPF e telefone).
 
+<p align="center">
+  <img src="preview.png" width="800" alt="Preview do componente ClienteView LWC"/>
+</p>
+
 ---
 
 ## 🧩 Funcionalidades
@@ -23,4 +27,5 @@ Ele exibe os dados do cliente em um layout visual agradável e seguro, aplicando
 ---
 
 ## 🏗️ Estrutura do Projeto
+
 
