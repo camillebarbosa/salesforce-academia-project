@@ -71,6 +71,9 @@ Vá até o App Builder da página do objeto (ex: Contrato__c).
 
 Arraste o componente ClienteView para o layout.
 
+
+---
+
 ##💡 Exemplo de Uso
 
 Quando um registro com o campo Cliente__c é aberto, o LWC executa:
@@ -107,6 +110,7 @@ Camille Barbosa
 
 Este projeto é distribuído sob a licença MIT.
 Sinta-se livre para usar, modificar e compartilhar — desde que mantenha os créditos.
+
 
 
 
