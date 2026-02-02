@@ -56,11 +56,11 @@ git clone https://github.com/seu-usuario/salesforce-academia-project.git
 cd salesforce-academia-project
 
 2. Autentique-se na sua org Salesforce
-
+```bash
 sfdx force:auth:web:login -a MinhaOrg
 
 3. Faça o push do código
-
+```bash
 sfdx force:source:push -u MinhaOrg
 
 4. Configure permissões
@@ -107,3 +107,17 @@ Pagamentos: Pago - R$ 120,00
 
 Este projeto é distribuído sob a licença MIT.
 Sinta-se livre para usar, modificar e compartilhar — desde que mantenha os créditos.
+
+🧠 Tecnologias Utilizadas
+
+⚡ Lightning Web Components (LWC)
+
+☁️ Apex (backend)
+
+💅 Salesforce Lightning Design System (SLDS)
+
+🧱 JavaScript (ES6+)
+
+🎨 CSS customizado com gradiente
+
+
