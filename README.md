@@ -55,25 +55,6 @@ force-app/
 git clone https://github.com/seu-usuario/salesforce-academia-project.git
 cd salesforce-academia-project
 
-2. Autentique-se na sua org Salesforce
-```bash
-sfdx force:auth:web:login -a MinhaOrg
-
-3. Faça o push do código
-```bash
-sfdx force:source:push -u MinhaOrg
-
-4. Configure permissões
-
-Garanta que o perfil de usuário tenha acesso à classe Apex AcademiaService.
-
-5. Adicione o componente na página
-
-Vá até o App Builder da página do objeto (ex: Contrato__c).
-
-Arraste o componente ClienteView para o layout.
-
-Certifique-se de que o campo Cliente__c esteja preenchido.
 
 💡 Exemplo de Uso
 
@@ -101,15 +82,14 @@ Pagamentos: Pago - R$ 120,00
 
 🎨 CSS customizado com gradiente
 
-
 👩‍💻 Autora
+
 Camille Barbosa
 💼 Projeto Salesforce Academia
 
+
 🪪 Licença
+
 Este projeto é distribuído sob a licença MIT.
 Sinta-se livre para usar, modificar e compartilhar — desde que mantenha os créditos.
-
-
-
 
