@@ -74,7 +74,7 @@ Arraste o componente ClienteView para o layout.
 
 ---
 
-##💡 Exemplo de Uso
+## 💡 Exemplo de Uso
 
 Quando um registro com o campo Cliente__c é aberto, o LWC executa:
 
@@ -88,7 +88,7 @@ Telefone: +55 (11) 9****-5678
 Plano: Musculação (Ativo)
 Pagamentos: Pago - R$ 120,00
 
-##🧠 Tecnologias Utilizadas
+## 🧠 Tecnologias Utilizadas
 
 ⚡ Lightning Web Components (LWC)
 
@@ -100,16 +100,17 @@ Pagamentos: Pago - R$ 120,00
 
 🎨 CSS customizado com gradiente
 
-##👩‍💻 Autora
+## 👩‍💻 Autora
 
 Camille Barbosa
 💼 Projeto Salesforce Academia
 
 
-##🪪 Licença
+## 🪪 Licença
 
 Este projeto é distribuído sob a licença MIT.
 Sinta-se livre para usar, modificar e compartilhar — desde que mantenha os créditos.
+
 
 
 
