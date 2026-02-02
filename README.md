@@ -103,21 +103,13 @@ Pagamentos: Pago - R$ 120,00
 
 
 👩‍💻 Autora
-🪪 Licença
+Camille Barbosa
+💼 Projeto Salesforce Academia
 
+🪪 Licença
 Este projeto é distribuído sob a licença MIT.
 Sinta-se livre para usar, modificar e compartilhar — desde que mantenha os créditos.
 
-🧠 Tecnologias Utilizadas
 
-⚡ Lightning Web Components (LWC)
-
-☁️ Apex (backend)
-
-💅 Salesforce Lightning Design System (SLDS)
-
-🧱 JavaScript (ES6+)
-
-🎨 CSS customizado com gradiente
 
 
