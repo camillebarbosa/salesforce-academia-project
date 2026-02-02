@@ -27,5 +27,36 @@ Ele exibe os dados do cliente em um layout visual agradável e seguro, aplicando
 ---
 
 ## 🏗️ Estrutura do Projeto
+force-app/
+└── main/
+└── default/
+├── aura/
+├── classes/
+│ └── AcademiaService.cls
+├── lwc/
+│ └── clienteView/
+│ ├── clienteView.html
+│ ├── clienteView.js
+│ ├── clienteView.css
+│ └── clienteView.js-meta.xml
+├── objects/
+│ └── Contrato__c/
+│ └── fields/
+│ └── Cliente__c.field-meta.xml
+
+
+
+---
+
+## ⚙️ Instalação
+
+### 1. Clone o repositório
+```bash
+git clone https://github.com/seu-usuario/salesforce-academia-project.git
+cd salesforce-academia-project
+
+2. Autentique-se na sua org Salesforce
+
+sfdx force:auth:web:login -a MinhaOrg
 
 
