@@ -1,7 +1,4 @@
 
----
-
-### 🧾 README.md
 
 ```markdown
 # 🏋️‍♀️ Salesforce Academia – Cliente View LWC
@@ -157,4 +154,5 @@ Este projeto é distribuído sob a licença **MIT**.
 Sinta-se livre para usar, modificar e compartilhar — desde que mantenha os créditos.
 
 ---
+
 
