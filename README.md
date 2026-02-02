@@ -59,4 +59,51 @@ cd salesforce-academia-project
 
 sfdx force:auth:web:login -a MinhaOrg
 
+3. Faça o push do código
 
+sfdx force:source:push -u MinhaOrg
+
+4. Configure permissões
+
+Garanta que o perfil de usuário tenha acesso à classe Apex AcademiaService.
+
+5. Adicione o componente na página
+
+Vá até o App Builder da página do objeto (ex: Contrato__c).
+
+Arraste o componente ClienteView para o layout.
+
+Certifique-se de que o campo Cliente__c esteja preenchido.
+
+💡 Exemplo de Uso
+
+Quando um registro com o campo Cliente__c é aberto, o LWC executa:
+
+1️⃣ Busca o ID do cliente relacionado.
+2️⃣ Chama o método Apex getClienteById.
+3️⃣ Exibe as informações formatadas e mascaradas:
+
+Nome: João da Silva
+CPF: ***.***.789-00
+Telefone: +55 (11) 9****-5678
+Plano: Musculação (Ativo)
+Pagamentos: Pago - R$ 120,00
+
+🧠 Tecnologias Utilizadas
+
+⚡ Lightning Web Components (LWC)
+
+☁️ Apex (backend)
+
+💅 Salesforce Lightning Design System (SLDS)
+
+🧱 JavaScript (ES6+)
+
+🎨 CSS customizado com gradiente
+
+
+👩‍💻 Autora
+🪪 Licença
+
+Este projeto é distribuído sob a licença MIT.
+Sinta-se livre para usar, modificar e compartilhar — desde que mantenha os créditos.
