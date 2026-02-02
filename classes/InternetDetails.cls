@@ -6,50 +6,43 @@
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 
-public class InternetDetails {
+public with sharing class InternetDetails {
 
-@AuraEnabled(cacheable=true)
+    @AuraEnabled(cacheable=true)
+    public static List<ChipHistoryWrapper> buscarCompras(String numeroCliente) {
 
-public static List<ChipHistoryWrapper> buscarCompras(String numeroCliente){
+        // Token da API
+        String token = 'abc123';
 
-    String token = abc123;
+        // Endpoint
+        String url = 'https://projectinternetatual.free.beeceptor.com/' + numeroCliente;
 
-String url = 'https://projectinternetatual.free.beeceptor.com/'
+        Http http = new Http();
+        HttpRequest request = new HttpRequest();
+        request.setEndpoint(url);
+        request.setMethod('GET');
+        request.setTimeout(10000); // 10 segundos
+        request.setHeader('Authorization', 'Bearer ' + token);
+        request.setHeader('Content-Type', 'application/json');
 
-+ numeroCliente;
+        try {
+            HttpResponse response = http.send(request);
 
-Http http = new Http();
+            if (response.getStatusCode() == 200 && String.isNotBlank(response.getBody())) {
+                return (List<ChipHistoryWrapper>) JSON.deserialize(
+                    response.getBody(),
+                    List<ChipHistoryWrapper>.class
+                );
+            }
 
-HttpRequest request = new HttpRequest();
+            // Sempre retorne lista vazia para Aura/LWC
+            return new List<ChipHistoryWrapper>();
 
-request.setEndpoint(url);
-request.setMethod('GET');
-request.setHeader('Authorization', 'Bearer' + token);
-request.setTimeout(10000); //10 segundos
-
-try{
-
-HttpResponse response = http.send(request);
-
-if(response.getStatusCode() == 200){
-
-List<ChipHistoryWrapper> result = (List<ChipHistoryWrapper>) JSON.deserialize(response.getBody(), List<ChipHistoryWrapper>.class);
-
-return result;
-
+        } catch (Exception e) {
+            System.debug('Erro ao consultar API: ' + e.getMessage());
+            throw new AuraHandledException('Erro ao consultar dados de compras.');
+        }
+    }
 }
 
-return null;
-
-}catch(Exception e){
-
-System.debug('Erro ao consultar API');
-
-return null;
-
-}
-
-}
-
-}
 
