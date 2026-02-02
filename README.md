@@ -51,7 +51,7 @@ force-app/
 ## ⚙️ Instalação
 
 ### 1. Clone o repositório
-```bash
+
 git clone https://github.com/seu-usuario/salesforce-academia-project.git
 cd salesforce-academia-project
 
@@ -92,4 +92,5 @@ Camille Barbosa
 
 Este projeto é distribuído sob a licença MIT.
 Sinta-se livre para usar, modificar e compartilhar — desde que mantenha os créditos.
+
 
