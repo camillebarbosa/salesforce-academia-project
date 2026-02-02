@@ -1,7 +1,3 @@
-Perfeito, Camille 💜 — aqui vai um modelo de **README.md completo**, pronto pra colocar no GitHub do seu projeto **Salesforce Academia (LWC)**.
-
-Ele explica o propósito do componente, tecnologias usadas, estrutura, e como instalar/deployar no Salesforce.
-Incluí também uma seção visual (com ideia do design moderno que você está criando).
 
 ---
 
@@ -161,3 +157,4 @@ Este projeto é distribuído sob a licença **MIT**.
 Sinta-se livre para usar, modificar e compartilhar — desde que mantenha os créditos.
 
 ---
+
